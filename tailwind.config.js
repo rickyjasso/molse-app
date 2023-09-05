@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors:{
       // TODO : CHANGE COLORS TO FIGMA DESIGN
         "gray-20" : "#F8F4EB",
         "gray-50" : "#EFE6E6",
@@ -17,6 +17,13 @@ export default {
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
+
+        "molse-primary": "#1F2859",
+        "molse-secondary": "#A59596",
+        "molse-tertiary": "#474B64",
+        "molse-white": "#DFDDDB",
+        "molse-text": "#1F2859",
+        "navbar-scroll": "RGBA(0,0,0,0.2)"
     },
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA
@@ -45,7 +52,8 @@ export default {
     xs: "480px",
     sm: "768px",
     md: "1060px",
+    },
   },
 
   plugins: [],
-}
+};
