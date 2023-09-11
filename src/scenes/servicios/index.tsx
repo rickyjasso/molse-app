@@ -2,7 +2,7 @@ type Props = {}
 
 const Servicios = (props: Props) => {
   return (
-    <section id="servicios" className="gap-16 bg-molse-white py-10 md:h-full md:pb-0">Servicios</section>
+    <section id="servicios" className="mx-auto w-5/6 pt-24 pb-32">Servicios</section>
   )
 }
 

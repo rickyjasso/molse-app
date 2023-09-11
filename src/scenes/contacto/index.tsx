@@ -2,6 +2,9 @@ import HText from "@/shared/HText";
 import { SelectedPage } from "@/shared/types";
 import {motion} from "framer-motion";
 import {useForm} from "react-hook-form";
+import Map from "@/shared/Map";
+import useMediaQuery from "@/hooks/useMediaQuery";
+  
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -9,6 +12,7 @@ type Props = {
 
 const Contacto = ({setSelectedPage}: Props) => {
 
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const inputStyles = `mt-5 w-full rounded-lg bg-white border-solid border border-molse-primary px-5 py-3 placeholder-molse-primary text-black`
 
   const {
@@ -25,7 +29,7 @@ const Contacto = ({setSelectedPage}: Props) => {
   }
 
   return (
-    <section id="contacto" className="mx-auto w-5/6 pt-24 pb-32">
+    <section id="contacto" className="mx-auto w-5/6 pt-24 pb-32 flex">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
         {/* HEADER */}
         <motion.div className="md:w-3/5"
@@ -42,7 +46,7 @@ const Contacto = ({setSelectedPage}: Props) => {
           <p className="my-5">Ponte en contacto y responderemos lo más pronto posible.</p>
         </motion.div>
         {/* FORM AND IMG */}
-        <div className="mt-10 justify-between gap-8 md:flex">
+        <div className="mt-10 justify-between gap-8 md:auto">
           <motion.div className="mt-10 basis-3/5 md:mt-0"
                       initial="hidden"
                       whileInView="visible"
@@ -99,7 +103,22 @@ const Contacto = ({setSelectedPage}: Props) => {
             </form>
           </motion.div>
         </div>
+
       </motion.div>
+          {isAboveMediumScreens ? (
+            <motion.div className="flex-col flex md:w-4/5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{duration: 0.5}}
+            variants={{hidden: {opacity: 0, x:50},
+                       visible: {opacity: 1, x:0},
+            }}>
+        <h1 className="font-montserrat text-3xl font-bold text-center text-molse-primary">Area de presencia</h1>
+          <Map/>
+        </motion.div>
+          ): <div></div>}
+
     </section>
   )
 }

@@ -4,7 +4,7 @@ import Logo from "@/assets/Logo-transparent.png"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
-import ActionButton from "@/shared/ActionButton"
+import {GlobeAltIcon} from "@heroicons/react/24/outline"
 
 
 type Props = {
@@ -14,6 +14,19 @@ type Props = {
 }
 
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+
+  const [language, setLanguage] = useState('ES');
+
+  const handleOnClick = () => {
+    if (language === 'ES'){
+      setLanguage("EN")
+    } else {
+      setLanguage("ES")
+    }
+
+    /* TRANSLATE PAGE */
+  };
+
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -37,9 +50,15 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               <Link page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             </div>
-{/*             <div className={`${flexBetween} gap-8`}>
-              <ActionButton setSelectedPage={setSelectedPage}>Iniciar Sesión</ActionButton>
-            </div> */}
+            <div className={`${flexBetween} gap-8`}>
+              <div className="flex items-center justify-center">
+                <button value={language} onClick={handleOnClick}>
+                  {language}
+                  <GlobeAltIcon className="float-left mr-2 h-6 w-6 text-molse-primary"/>
+                </button>
+              </div>
+            </div>
+
           </div>
           ) : (
             <button className="rounded-full bg-molse-primary p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
