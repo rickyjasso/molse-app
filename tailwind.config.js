@@ -23,7 +23,7 @@ export default {
         "molse-tertiary": "#474B64",
         "molse-white": "#DFDDDB",
         "molse-text": "#1F2859",
-        "navbar-scroll": "RGBA(0,0,0,0.2)"
+        "navbar-scroll": "RGBA(255,255,255,0.5)"
     },
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA

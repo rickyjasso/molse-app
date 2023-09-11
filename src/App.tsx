@@ -28,7 +28,7 @@ function App() {
       <Home></Home>
       <Nosotros></Nosotros>
       <Servicios></Servicios>
-      <Contacto></Contacto>
+      <Contacto setSelectedPage={setSelectedPage}></Contacto>
     </div>
   )
 }
