@@ -7,7 +7,7 @@ type Props = {
 
 const Home = ({setSelectedPage}: Props) => {
   return (
-    <section id="home" className="mx-auto w-5/6 pt-24 pb-32">Home
+    <section id="home" className="mx-auto w-5/6  pt-12 pb-16">Home
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
     {/* IMAGE AND MAIN HEADER */}
     <div>

@@ -1,4 +1,4 @@
-import {ZoomableGroup, Marker,  ComposableMap, Geographies, Geography } from "react-simple-maps"
+import {Marker,  ComposableMap, Geographies, Geography } from "react-simple-maps"
 
 const geoUrl ="https://gist.githubusercontent.com/diegovalle/5129746/raw/c1c35e439b1d5e688bca20b79f0e53a1fc12bf9e/mx_tj.json"
 
