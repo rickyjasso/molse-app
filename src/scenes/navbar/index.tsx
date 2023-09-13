@@ -30,7 +30,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-navbar-scroll drop-shadow"; //TODO: Change BG TO MOLSE COLOR
+  const navbarBackground = isTopOfPage ? "text-white" : "bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
 
   return(
     <nav>
@@ -44,17 +44,17 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           {isAboveMediumScreens ? (
           <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
-              <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             </div>
             <div className={`${flexBetween} gap-8`}>
               <div className="flex items-center justify-center">
-                <button value={language} onClick={handleOnClick}>
+                <button value={language} onClick={handleOnClick} className={`${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
                   {language}
-                  <GlobeAltIcon className="float-left mr-2 h-6 w-6 text-molse-primary"/>
+                  <GlobeAltIcon className={`float-left mr-2 h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
                 </button>
               </div>
             </div>
@@ -80,11 +80,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-              <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor="text-molse-primary" page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor="text-molse-primary" page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link selectedColor="text-molse-primary" page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor="text-molse-primary" page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor="text-molse-primary" page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             </div>
         </div>
       )}
