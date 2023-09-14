@@ -25,14 +25,15 @@ export default {
         "molse-text": "#1F2859",
         "navbar-scroll": "RGBA(255,255,255)"
     },
+    
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA
-    // backgroundImage: (theme) => ({
-    //   "gradient-yellowred":
-    //   "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-    //   "mobile-home": "url('./assets/HomePageGraphic.png')",
-    // }),
-
+    backgroundImage: {
+      'home': 'url(src/assets/homebg.png)',
+    },
+    filter: {
+      'grayscale-100': 'grayscale(100%)',
+    },
     // TODO: CHOOSE FONT FAMILY FROM FIGMA
     fontFamily: {
       dmsans: ["DM Sans", "sans-serif"],

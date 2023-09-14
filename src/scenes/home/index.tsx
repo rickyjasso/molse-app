@@ -13,15 +13,17 @@ const Home = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   
   return (
-    <section id="home" className="h-screen pt-12 pb-16 bg-molse-primary flex justify-center items-center align-middle">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className={`${isAboveMediumScreens ? "w-1/2" : "w-5/6"}`}>
-        <div className="text-white text-center">
-            <HText>Molse Abogados, S.C.</HText>
-          <p className={`${isAboveMediumScreens ? "text-lg" : "text-sm text-center"} mb-6 mt-5`}>is a law firm that has been duly incorporated under
-                                        Mexican Legislation to counsel and advise companies in corporate, labor and
-                                        employment laws and regulations.</p>
-          <ActionButton setSelectedPage={setSelectedPage}>Servicios</ActionButton>
-          <p className="text-3xl mt-12 ">EL FONDO TENDRÁ UNA IMAGEN</p>                                        
+    <section id="home" className="bg-blend-overlay bg-black/50 bg-home bg-cover bg-center h-screen pt-12 pb-16 flex justify-center items-center align-middle">
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-5/6">
+        <div className="text-molse-white text-center">
+          <p className={`flex flex-col ${isAboveMediumScreens ? "text-5xl text-center" : "text-2xl text-center"} mb-6 mt-5`}>
+            <span className="my-2">BUSCANDO BRINDAR</span> 
+            <span className="my-2"> <HText textSize={isAboveMediumScreens?"text-7xl": "text-3xl"}>SERVICIOS CON INTEGRIDAD</HText></span> 
+            <span className="my-2">A TODOS NUESTROS CLIENTES</span></p>
+          <div className="flex justify-evenly align-middle px-10">
+            <ActionButton setSelectedPage={setSelectedPage}>Nuestros servicios</ActionButton>                                     
+            {/* <ActionButton setSelectedPage={setSelectedPage}>Noticias</ActionButton>    */}                                    
+          </div>
         </div>
 
       </motion.div>
