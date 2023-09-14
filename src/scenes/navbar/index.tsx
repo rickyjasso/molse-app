@@ -45,14 +45,14 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
               <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             </div>
             <div className={`${flexBetween} gap-8`}>
               <div className="flex items-center justify-center">
-                <button value={language} onClick={handleOnClick} className={`${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
+              <Link selectedColor={isTopOfPage ? "text-molse-secondary": "text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <button value={language} onClick={handleOnClick} className={`mx-5 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
                   {language}
                   <GlobeAltIcon className={`float-left mr-2 h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
                 </button>
@@ -83,8 +83,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               <Link selectedColor="text-molse-primary" page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link selectedColor="text-molse-primary" page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link selectedColor="text-molse-primary" page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link selectedColor="text-molse-primary" page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link selectedColor="text-molse-primary" page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <div className="my-10">
+              <Link selectedColor="text-molse-primary" page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              </div>
             </div>
         </div>
       )}

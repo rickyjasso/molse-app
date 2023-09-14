@@ -26,8 +26,8 @@ function App() {
     <div className="app bg--white">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}></Home>
-      <Nosotros setSelectedPage={setSelectedPage}></Nosotros>
       <Servicios setSelectedPage={setSelectedPage}></Servicios>
+      <Nosotros setSelectedPage={setSelectedPage}></Nosotros>
       <Contacto setSelectedPage={setSelectedPage}></Contacto>
     </div>
   )
