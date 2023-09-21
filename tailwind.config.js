@@ -23,6 +23,7 @@ export default {
         "molse-tertiary": "#474B64",
         "molse-white": "#DFDDDB",
         "molse-text": "#1F2859",
+        "molse-contrast": "#E0D7A6",
         "navbar-scroll": "RGBA(255,255,255)"
     },
     

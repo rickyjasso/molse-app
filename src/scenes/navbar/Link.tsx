@@ -7,6 +7,7 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
     selectedColor: string,
     hoverColor: string,
+    unselectedColor: string,
 }
 
 function Link({
@@ -15,12 +16,13 @@ function Link({
     setSelectedPage,
     selectedColor,
     hoverColor,
+    unselectedColor
 }: Props) {
 
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage
 
   return (
-    <AnchorLink className={`${selectedPage === lowerCasePage ? `${selectedColor}` : "text-gray-400"}
+    <AnchorLink className={`${selectedPage === lowerCasePage ? `${selectedColor}` : `${unselectedColor}`}
     transition duration-500 ${hoverColor}
     `} href={`#${lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
         {page}
