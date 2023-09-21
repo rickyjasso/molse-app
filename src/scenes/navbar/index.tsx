@@ -79,12 +79,12 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor="text-molse-primary" page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor="text-molse-primary" page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor="text-molse-primary" page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor="text-molse-primary" page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <div className="my-10">
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor="text-molse-primary" page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               </div>
             </div>
         </div>
