@@ -1,25 +1,39 @@
 {
     "services": [
-        {
+      {
         "id": 1,
-        "title": "01. Litigation",
-        "body": "Attending all claims and labor lawsuits, managing litigation, and proceedings before Local and Federal Labor Courts, in first instance; as well as in Amparo proceedings (habeas corpus) before the Labor Circuit Courts in second instance, as well as in constitutional matters before the Mexican Supreme Court of Justice."
-        },
-        {
+        "title": "Consultoría",
+        "body": [
+          "Les ofrecememos consultoría en general de todo lo relacionado con la rama del Derecho del Trabajo"
+        ]
+      },
+      {
         "id": 2,
-        "title": "02. Counseling and Litigation",
-        "body": "Providing legal advice in labor conflicts proceedings before the Mexican Ministry of Labor and Social Security (STPS for its initials in Spanish) or before any other Labor Authority, as well as providing permanent advice in the implementation and monitoring of the various Mixed Commissions, in accordance with the applicable laws and regulations."
-        },
-        {
+        "title": "Asesorías Laborales",
+        "body": [
+          "Brindamos asesoría laboral en contratos colectivos y conflictos laborales ante autoridades laborales"
+        ]
+      },
+      {
         "id": 3,
-        "title": "03. Counseling",
-        "body": "Developing and updating relevant documents according to the new employment and labor laws, as needed for regulating the BRADFORD-Employee relation; the relevant documents needed in case of litigation; and those for compliance purposes in case of inspections by the STPS."
-        },  
-        {
+        "title": "Asesorías adicionales ",
+        "body": [
+        "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
+        ]
+      },  
+      {
         "id": 4,
-        "title": "04. Counseling",
-        "body": "Attending meetings, when necessary, with the Directors of Human Resources and Personnel Chiefs and other relevant positions, to bring them up to date in labor-related matters with the intention of preventing labor conflicts to the extent possible."
-        }      
-
+        "title": "Citas Concilatorias",
+        "body": [
+        "Prestamos atención a citas conciliatorias de carácter prejudicial, de acuerdo con el Nuevo Sistema de Justicia Laboral"
+        ]
+    },
+      {
+        "id": 5,
+        "title": "Implementacion de Base de datos",
+        "body": [
+        "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
+        ]
+      }
     ]
-}
+  }
