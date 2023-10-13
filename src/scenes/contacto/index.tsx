@@ -29,6 +29,7 @@ const Contacto = ({setSelectedPage}: Props) => {
   }
 
   return (
+    <div className="bg-molse-primary">
     <section id="contacto" className="mx-auto w-5/6  pt-12 pb-16 flex">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
         {/* HEADER */}
@@ -41,9 +42,9 @@ const Contacto = ({setSelectedPage}: Props) => {
                                visible: {opacity: 1, x:0},
                     }}>
         <HText>
-          <span className="text-molse-primary">¿Tienes una pregunta?</span> ¡Contactanos!
+          <span className="text-molse-white">¿Tienes una pregunta?</span> ¡Contactanos!
         </HText>
-          <p className="my-5">Ponte en contacto y responderemos lo más pronto posible.</p>
+          <p className="my-5 text-molse-white">Ponte en contacto y responderemos lo más pronto posible.</p>
         </motion.div>
         {/* FORM AND IMG */}
         <div className="mt-10 justify-between gap-8 md:auto">
@@ -114,12 +115,13 @@ const Contacto = ({setSelectedPage}: Props) => {
             variants={{hidden: {opacity: 0, x:50},
                        visible: {opacity: 1, x:0},
             }}>
-        <h1 className="font-montserrat text-3xl font-bold text-center text-molse-primary">Area de presencia</h1>
+        <h1 className="font-montserrat text-3xl font-bold text-center text-molse-white">Area de presencia</h1>
           <Map/>
         </motion.div>
           ): <div></div>}
 
     </section>
+    </div>
   )
 }
 

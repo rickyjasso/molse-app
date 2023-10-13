@@ -7,14 +7,18 @@ export default function MapChart() {
   const markers = [
     {
       markerOffset: -30,
-      name: "Monterrey",
+      name: "MTY",
       coordinates: [-100.31333712082878, 25.70285508008985]
     },
     { markerOffsetX: 0, markerOffset: 15, name: "CDMX", coordinates: [-99.13322769245599, 19.435286136717796] },
-    { markerOffsetX: -15, markerOffset: -30, name: "Guadalajara", coordinates: [-103.34880682896933, 20.659959416011468] },
-    { markerOffsetX: 15, markerOffset: -30, name: "Queretaro", coordinates: [-100.39030857351007, 20.589300224112264] },
-    { markerOffsetX: 0, markerOffset: 15, name: "Acapulco", coordinates: [-99.88085221753593, 16.86435927860148] },
-    { markerOffsetX: 0, markerOffset: 15, name: "Tijuana", coordinates: [-116.93914445794728, 32.49547740447609] },
+    { markerOffsetX: -15, markerOffset: -30, name: "GDL", coordinates: [-103.34880682896933, 20.659959416011468] },
+    { markerOffsetX: 15, markerOffset: -30, name: "QRO", coordinates: [-100.39030857351007, 20.589300224112264] },
+    { markerOffsetX: 0, markerOffset: 15, name: "ACP", coordinates: [-99.88085221753593, 16.86435927860148] },
+    { markerOffsetX: 0, markerOffset: 15, name: "TIJ", coordinates: [-116.93914445794728, 32.49547740447609] },
+    { markerOffsetX: 0, markerOffset: 15, name: "TRC", coordinates: [-103.34635125837403, 26.044549041199524] },
+    { markerOffsetX: 0, markerOffset: 15, name: "AGS", coordinates: [-102.21087277281784, 22.03049257146035] },
+    { markerOffsetX: 0, markerOffset: 15, name: "SAL", coordinates: [-100.97372316983859, 25.43821488280707 ] }
+
   ];
   
 
@@ -28,7 +32,11 @@ export default function MapChart() {
  */}      <Geographies geography={geoUrl} >
         {({ geographies }) =>
           geographies.map((geo) => (
-            <Geography key={geo.rsmKey} geography={geo} fill="#A59596"/>
+            <Geography key={geo.rsmKey} geography={geo} fill="#A59596"style={{
+              default: { outline: "none" },
+              hover: { outline: "none" },
+              pressed: { outline: "none" },
+            }}/>
           ))
         }
       </Geographies>
@@ -36,7 +44,7 @@ export default function MapChart() {
         <Marker key={name} coordinates={coordinates as [number, number]}>
           <g
             fill="none"
-            stroke="#1F2859"
+            stroke="#96bfff"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -49,7 +57,7 @@ export default function MapChart() {
             textAnchor="middle"
             y={markerOffset}
             x={markerOffsetX}
-            style={{ fontFamily: "system-ui", fill: "black" }}
+            style={{ fontFamily: "system-ui", fill: "white" }}
           >
             {name}
           </text>
