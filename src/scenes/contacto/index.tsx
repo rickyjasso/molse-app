@@ -27,7 +27,7 @@ const Contacto = ({setSelectedPage}: Props) => {
       e.preventDefault();
     }
   }
-
+  
   return (
     <section id="contacto" className="mx-auto w-5/6  pt-12 pb-16 flex">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
