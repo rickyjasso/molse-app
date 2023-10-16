@@ -16,8 +16,9 @@ const Contacto = ({setSelectedPage}: Props) => {
 
   const isAboveMediumSize = useMediaQuery("(min-width: 1060px)")
   const isAboveMapSize = useMediaQuery("(min-width: 1300px)")
+  const isAboveSmSize = useMediaQuery("(min-width: 680px)")
   const inputStyles = `mt-5 w-full rounded-lg bg-white border-solid border border-molse-primary px-5 py-3 placeholder-molse-primary text-black`
-  const listStyles = `flex ${isAboveMediumSize ? `justify-center` : `justify-start w-1/3` } text-xl text-bold my-5 align-middle`
+  const listStyles = `flex ${isAboveMediumSize ? `mx-32 justify-start w-1/2` : `justify-start w-1/3` } ${isAboveSmSize ? ``:`justify-start w-full`} text-xl text-bold my-5 align-middle`
   const ciudadesPresencia = [
     'Monterrey',
     'Tijuana',
@@ -144,7 +145,7 @@ const Contacto = ({setSelectedPage}: Props) => {
             </motion.div>
           </div>
           ): <div className="w-5/6 mx-auto">
-              <ul className={`text-white mt-10 ${isAboveMediumSize ? null : `flex flex-wrap`}`}>
+              <ul className={`text-white mt-10 justify-center align-middle ${isAboveMediumSize ? 'flex flex-wrap' : `flex flex-wrap`}`}>
               {ciudadesPresencia.map((city, index) => (
                 <li className={listStyles} key={index}>
                   <FontAwesomeIcon icon={faLocationDot} className="text-molse-white mr-2 mt-1" />
