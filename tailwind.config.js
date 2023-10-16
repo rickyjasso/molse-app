@@ -31,7 +31,7 @@ export default {
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA
     backgroundImage: {
-      'home': 'url(src/assets/header-img.jpg)',
+      'home': 'url(src/assets/header-img.jpeg)',
     },
     filter: {
       'grayscale-100': 'grayscale(100%)',

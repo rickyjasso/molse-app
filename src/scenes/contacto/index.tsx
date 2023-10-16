@@ -42,7 +42,7 @@ const Contacto = ({setSelectedPage}: Props) => {
       e.preventDefault();
     }
   }
-
+  
   return (
     <div className="bg-molse-primary">
       <section id="contacto" className={isAboveMediumSize ? `mx-auto w-5/6 pt-12 pb-16 flex` : `mx-auto w-5/6 pt-12 pb-16 flex-col`}>
