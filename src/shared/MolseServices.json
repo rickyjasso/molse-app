@@ -16,11 +16,11 @@
       },
       {
         "id": 3,
-        "title": "Asesorías adicionales ",
+        "title": "Implementacion de Base de datos",
         "body": [
-        "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
+        "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
         ]
-      },  
+      },
       {
         "id": 4,
         "title": "Citas Concilatorias",
@@ -28,12 +28,12 @@
         "Prestamos atención a citas conciliatorias de carácter prejudicial, de acuerdo con el Nuevo Sistema de Justicia Laboral"
         ]
     },
-      {
-        "id": 5,
-        "title": "Implementacion de Base de datos",
-        "body": [
-        "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
-        ]
-      }
+    {
+      "id": 5,
+      "title": "Asesorías adicionales ",
+      "body": [
+      "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
+      ]
+    }
     ]
   }
