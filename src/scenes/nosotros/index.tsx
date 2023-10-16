@@ -33,7 +33,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
           </div>
         </div>: 
         (<div>
-          <div className="mb-10"><HText><span className="text-molse-primary">Nosotros</span></HText></div>
+          <div className="mb-10"><HText textSize="3xl"><span className="text-molse-primary">Nosotros</span></HText></div>
           <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Misión</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error distinctio placeat.</p>
           <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Visión</h1>
