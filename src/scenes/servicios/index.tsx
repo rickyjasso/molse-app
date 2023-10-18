@@ -13,20 +13,20 @@ const Servicios = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   const servicesElements = services.services.map(service => (
-    <div className="flex align-middle justify-center text-center" key={service.id}>
-      <Card title={service.title} body={service.body}></Card>
+    <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`} key={service.id}>
+      <Card title={service.title} body={service.body} id={service.id}></Card>
     </div>
   ))
 
   return (
-    <div className="bg-molse-white  pt-12 pb-16">
+    <div className="bg-molse-white pt-12 pb-16">
     <section id="servicios" className="mx-auto w-5/6">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Servicios)}>
         <div className="flex-row justify-center align-middle text-center">
         <HText textSize="text-3xl"> <span className="text-molse-primary"> Nuestros Servicios </span></HText>
         <p className="text-black text-xl">Estos son nuestros servicios</p>
         </div>
-        <div className={isAboveMediumScreens ? "flex my-3" : "flex flex-col my-6"}>
+        <div className={isAboveMediumScreens ? "flex my-3 flex-wrap" : "flex flex-col my-6"}>
           {servicesElements}
         </div>
       </motion.div>
