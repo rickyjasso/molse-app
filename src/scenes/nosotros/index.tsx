@@ -20,7 +20,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
           <div className="mb-10 text-center"><HText textSize="text-3xl"><span className="text-molse-primary">Nosotros</span></HText></div>
           <div className="flex w-50 justify-center align-middle">
             <div className="flex-row">
-                <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Misión</h1>
+                <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Trayectoria</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error distinctio placeat.</p>
                 <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Visión</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci error odio harum provident deserunt inventore odit facilis necessitatibus maxime illum.</p>              
@@ -34,7 +34,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
         </div>: 
         (<div>
           <div className="mb-10"><HText textSize="3xl"><span className="text-molse-primary">Nosotros</span></HText></div>
-          <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Misión</h1>
+          <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Trayectoria</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error distinctio placeat.</p>
           <h1 className="basis-3/5 font-montserrat text-2xl font-bold mt-5 mb-1 text-molse-tertiary">Visión</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci error odio harum provident deserunt inventore odit facilis necessitatibus maxime illum.</p>
