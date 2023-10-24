@@ -6,6 +6,7 @@
         "body": [
           "Les ofrecememos consultoría en general de todo lo relacionado con la rama del Derecho del Trabajo"
         ]
+
       },
       {
         "id": 2,
@@ -16,9 +17,9 @@
       },
       {
         "id": 3,
-        "title": "Implementacion de Base de datos",
+        "title": "Asesorías adicionales ",
         "body": [
-        "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
+        "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
         ]
       },
       {
@@ -30,10 +31,11 @@
     },
     {
       "id": 5,
-      "title": "Asesorías adicionales ",
+      "title": "Implementacion de Base de datos",
       "body": [
-      "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
+      "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
       ]
+
     }
     ]
   }
