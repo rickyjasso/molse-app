@@ -18,7 +18,7 @@ const Contacto = ({setSelectedPage}: Props) => {
   const isAboveMapSize = useMediaQuery("(min-width: 1300px)")
   const isAboveSmSize = useMediaQuery("(min-width: 680px)")
   const inputStyles = `mt-5 w-full rounded-lg bg-white border-solid border border-molse-primary px-5 py-3 placeholder-molse-primary text-black`
-  const listStyles = `flex ${isAboveMediumSize ? `mx-32 justify-start w-1/2` : `justify-start w-1/3` } ${isAboveSmSize ? ``:`justify-start w-full`} text-xl text-bold my-5 align-middle`
+  const listStyles = `flex ${isAboveMediumSize ? `justify-center w-full` : `justify-center w-1/3` } ${isAboveSmSize ? ``:`justify-start w-full`} text-xl text-bold my-5 align-middle`
   const ciudadesPresencia = [
     'Monterrey',
     'Tijuana',
@@ -57,10 +57,10 @@ const Contacto = ({setSelectedPage}: Props) => {
                     variants={{hidden: {opacity: 0, x:-50},
                                visible: {opacity: 1, x:0},
                     }}>
-        <HText textSize="text-3xl">
+        <HText textSize="text-5xl">
           <span className="text-molse-white">¿Tienes una pregunta?</span> ¡Contactanos!
         </HText>
-          <p className="my-5 text-molse-white">Ponte en contacto y responderemos lo más pronto posible.</p>
+          <p className="my-5 text-molse-white text-xl">Ponte en contacto y responderemos lo más pronto posible.</p>
         </motion.div>
         {/* FORM AND IMG */}
         <div className="mt-10 justify-between gap-8 md:auto">
@@ -113,7 +113,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                   </p>
                   )}
 
-                  <button type="submit" className="mt-5 rounded-lg bg-white px-20 py-3 transition duration-500 hover:text-molse-tertiary hover:bg-molse-secondary text-molse-primary">
+                  <button type="submit" className={`justify-center mt-5 rounded-lg bg-white px-20 py-3 transition duration-500 hover:text-molse-tertiary hover:bg-molse-secondary text-molse-primary ${isAboveMediumSize ? ``: `w-full`}`}>
                     Enviar
                   </button>
 
@@ -130,7 +130,7 @@ const Contacto = ({setSelectedPage}: Props) => {
             variants={{hidden: {opacity: 0, x:50},
                        visible: {opacity: 1, x:0},
             }}>
-        <h1 className={`font-montserrat text-3xl font-bold flex justify-center text-molse-white ${isAboveMediumSize ?  null : `mt-10`}` }>Area de presencia</h1>
+        <h1 className={`text-5xl font-bold flex justify-center align-middle text-molse-white ${isAboveMediumSize ?  null : `mt-10`}` }>Area de presencia</h1>
         {isAboveMapSize ? (
           <div className="mt-10 justify-between gap-8 md:auto">
             <motion.div className="mt-10 basis-3/5 md:mt-0"
@@ -144,11 +144,11 @@ const Contacto = ({setSelectedPage}: Props) => {
             <Map/>
             </motion.div>
           </div>
-          ): <div className="w-5/6 mx-auto">
-              <ul className={`text-white mt-10 justify-center align-middle ${isAboveMediumSize ? 'flex flex-wrap' : `flex flex-wrap`}`}>
+          ): <div className="w-full flex mx-0">
+              <ul className='text-white mt-5 justify-start flex flex-wrap'>
               {ciudadesPresencia.map((city, index) => (
                 <li className={listStyles} key={index}>
-                  <FontAwesomeIcon icon={faLocationDot} className="text-molse-white mr-2 mt-1" />
+                  <span><FontAwesomeIcon icon={faLocationDot} className="text-molse-white mr-2 mt-1" /></span>
                   {city}
                   </li>
               ))}
