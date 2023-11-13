@@ -26,8 +26,8 @@ const Nosotros = ({setSelectedPage}: Props) => {
         <div className="md:absolute z-20">
           <div>
             <div>
-              <button onClick={setFalse} className={isActive ? 'w-2/5 md:w-1/5 py-2 bg-slate-100' : 'border-t-2 border-molse-primary bg-white w-2/5 md:w-1/5 py-2'}>Trayectoria</button>
-              <button onClick={setTrue} className={isActive ? 'border-t-2 border-molse-primary bg-white w-2/5 md:w-1/5 py-2' : 'w-2/5 md:w-1/5 py-2 bg-slate-100'}>Nosotros</button>
+              <button onClick={setFalse} className={`w-2/5 md:w-1/5 py-3 ${isActive ? ' bg-slate-100' : 'border-t-2 border-molse-primary bg-white '}`}>Trayectoria</button>
+              <button onClick={setTrue} className={`w-2/5 md:w-1/5 py-3 ${isActive ? 'border-t-2 border-molse-primary bg-white ' : ' bg-slate-100'}`}>Nosotros</button>
             </div>
           </div>
           <div>
