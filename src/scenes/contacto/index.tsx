@@ -49,7 +49,7 @@ const Contacto = ({setSelectedPage}: Props) => {
       <section id="contacto" className={isAboveMediumSize ? `mx-auto w-5/6 pt-12 pb-16 flex` : `mx-auto w-5/6 pt-12 pb-16 flex-col`}>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
         {/* HEADER */}
-          <motion.div className="md:w-3/5"
+          <motion.div className="md:w-4/5"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
@@ -57,10 +57,10 @@ const Contacto = ({setSelectedPage}: Props) => {
                     variants={{hidden: {opacity: 0, x:-50},
                                visible: {opacity: 1, x:0},
                     }}>
-        <HText textSize="text-5xl">
+        <HText textSize="text-5xl text-center md:text-start">
           <span className="text-molse-white">¿Tienes una pregunta?</span> ¡Contactanos!
         </HText>
-          <p className="my-5 text-molse-white text-xl">Ponte en contacto y responderemos lo más pronto posible.</p>
+          <p className="my-5 text-molse-white text-xl text-center md:text-start">Ponte en contacto y responderemos lo más pronto posible.</p>
         </motion.div>
         {/* FORM AND IMG */}
         <div className="mt-10 justify-between gap-8 md:auto">
