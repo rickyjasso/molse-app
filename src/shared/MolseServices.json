@@ -3,39 +3,37 @@
       {
         "id": 1,
         "title": "Consultoría",
-        "body": [
-          "Les ofrecememos consultoría en general de todo lo relacionado con la rama del Derecho del Trabajo"
-        ]
+        "body": ["Les ofrecememos consultoría en general de todo lo relacionado con la rama del Derecho del Trabajo"],
+        "icon" : "icons\\consultoria.png"
+        
+        
 
       },
       {
         "id": 2,
         "title": "Asesorías Laborales",
-        "body": [
-          "Brindamos asesoría laboral en contratos colectivos y conflictos laborales ante autoridades laborales"
-        ]
+        "body": ["Brindamos asesoría laboral en contratos colectivos y conflictos laborales ante autoridades laborales"],
+        "icon" : "icons\\asesoria.png"
+
       },
       {
         "id": 3,
         "title": "Asesorías adicionales ",
-        "body": [
-        "Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"
-        ]
+        "body": ["Ofrecemos asesoría en contratos laborales, conflictos colectivos y rescisiones, incluyendo pensiones alimenticias y juicios de colaboradores"],
+        "icon" : "icons\\asesoriaadicional.png"
       },
       {
         "id": 4,
         "title": "Citas Concilatorias",
-        "body": [
-        "Prestamos atención a citas conciliatorias de carácter prejudicial, de acuerdo con el Nuevo Sistema de Justicia Laboral"
-        ]
+        "body": ["Prestamos atención a citas conciliatorias de carácter prejudicial, de acuerdo con el Nuevo Sistema de Justicia Laboral"],
+        "icon" : "icons\\citas.png"
+
     },
     {
       "id": 5,
       "title": "Implementacion de Base de datos",
-      "body": [
-      "Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"
-      ]
-
+      "body": ["Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"],
+      "icon" : "icons\\basededatos.png"
     }
     ]
   }

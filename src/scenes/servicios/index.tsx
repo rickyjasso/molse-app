@@ -14,7 +14,8 @@ const Servicios = ({setSelectedPage}: Props) => {
 
   const servicesElements = services.services.map(service => (
     <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`} key={service.id}>
-      <Card title={service.title} body={service.body} id={service.id}></Card>
+      <Card title={service.title} body={service.body} id={service.id} icon={service.icon}></Card>
+
     </div>
   ))
 
