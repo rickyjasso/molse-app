@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import {useTranslation} from 'react-i18next'
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
 const Nosotros = ({setSelectedPage}: Props) => {
+
+  const {t} = useTranslation();
 
   const [isActive, setIsActive] = useState(false);
 
@@ -33,22 +36,22 @@ const Nosotros = ({setSelectedPage}: Props) => {
           <div>
             <div className="bg-white md:w-3/5 drop-shadow-xl py-5 px-10 text-lg">
             <div className={isActive ? 'hidden' : 'block my-5'}>
-                <h1 className="mb-3 text-3xl text-molse-primary font-bold">Trayectoria</h1>
-                <p>MOLSE ABOGADOS, se constituye y da inicio a sus operaciones en el año 2008 con el fin de dar asesorar a clientes en las ramas del derecho mercantil, civil y familiar; posteriormente en el año 2020 se consolida y da apertura a un nuevo servicio profesional en la rama del Derecho Laboral.</p>
+                <h1 className="mb-3 text-3xl text-molse-primary font-bold">{t('trajectory')}</h1>
+                <p>{t('trajectoryDescription')}</p>
                 <img src="" alt="" />
               </div>
               <div className={isActive ? 'block my-5' : 'hidden'}>
                 <div className="my-5">
-                  <h1 className="mb-3 text-3xl text-molse-primary font-bold">Nuestra Visión</h1>
-                  <p>Ser una de las firmas legales líderes en el Norte de México, brindando servicios íntegros, transparencia y de calidad a nuestros clientes.</p>
+                  <h1 className="mb-3 text-3xl text-molse-primary font-bold">{t('vision')}</h1>
+                  <p>{t('visionDescription')}</p>
                 </div>
                 <div className="my-5">
-                  <h1 className="mb-3 text-3xl text-molse-primary font-bold">Nuestros Valores</h1>
+                  <h1 className="mb-3 text-3xl text-molse-primary font-bold">{t('values')}</h1>
                   <ul>
-                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>Lealtad</li>
-                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>Responsabilidad</li>
-                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>Disciplina</li>
-                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>Tenacidad</li>
+                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>{t('loyalty')}</li>
+                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>{t('responsibility')}</li>
+                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>{t('discipline')}</li>
+                      <li className="flex my-5"><span><FontAwesomeIcon className="mr-2 text-molse-primary" icon={faCheck}/></span>{t('tenacity')}</li>
                   </ul>
                 </div>
               </div>
