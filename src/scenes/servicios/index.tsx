@@ -23,8 +23,8 @@ const Servicios = ({setSelectedPage}: Props) => {
     <section id="servicios" className="mx-auto w-5/6">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Servicios)}>
         <div className="flex-row justify-center align-middle text-center">
-        <HText textSize="text-3xl"> <span className="text-molse-primary"> Nuestros Servicios </span></HText>
-        <p className="text-black text-xl">Estos son nuestros servicios</p>
+          <HText textSize="text-3xl"> <span className="text-molse-primary"> Nuestros Servicios </span></HText>
+          <p className="text-black text-xl">Estos son nuestros servicios</p>
         </div>
         <div className={isAboveMediumScreens ? "flex my-3 flex-wrap" : "flex flex-col my-6"}>
           {servicesElements}

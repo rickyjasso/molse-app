@@ -23,7 +23,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="app bg--white">
+    <div className="app bg--white font-timesnewroman">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}></Home>
       <Servicios setSelectedPage={setSelectedPage}></Servicios>

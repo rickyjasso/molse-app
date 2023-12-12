@@ -23,7 +23,7 @@ function Link({
 
   return (
     <AnchorLink className={`${selectedPage === lowerCasePage ? `${selectedColor}` : `${unselectedColor}`}
-    transition duration-500 ${hoverColor}
+    transition duration-500 text-lg ${hoverColor}
     `} href={`#${lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
         {page}
     </AnchorLink>

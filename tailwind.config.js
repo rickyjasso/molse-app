@@ -40,6 +40,8 @@ export default {
     fontFamily: {
       dmsans: ["DM Sans", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
+      timesnewroman: ["Times New Roman", "serif"],
+      garamond: ['EB Garamond', "serif"],
     },
 
     // TODO: CHOOSE CONTENT IMAGES FROM FIGMA
