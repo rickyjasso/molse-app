@@ -20,16 +20,16 @@ const Servicios = ({setSelectedPage}: Props) => {
         <Card title={t('consultancy')} body={t('consultancyDescription')} id={t('1')} icon={services.services[0].icon}></Card>
       </div>
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`}>
-        <Card title={t('laborAdvisory')} body={t('laborAdvisoryDescription')} id={t('2')} icon={services.services[0].icon}></Card>
+        <Card title={t('laborAdvisory')} body={t('laborAdvisoryDescription')} id={t('2')} icon={services.services[1].icon}></Card>
       </div>
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`}>
-        <Card title={t('additionalAdvisory')} body={t('additionalAdvisoryDescription')} id={t('3')} icon={services.services[0].icon}></Card>
+        <Card title={t('additionalAdvisory')} body={t('additionalAdvisoryDescription')} id={t('3')} icon={services.services[2].icon}></Card>
       </div>
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`}>
-        <Card title={t('conciliationAppointments')} body={t('conciliationAppointmentsDescription')} id={t('4')} icon={services.services[0].icon}></Card>
+        <Card title={t('conciliationAppointments')} body={t('conciliationAppointmentsDescription')} id={t('4')} icon={services.services[3].icon}></Card>
       </div>
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/3" : ""}`}>
-        <Card title={t('databaseImplementation')} body={t('databaseImplementationDescription')} id={t('5')} icon={services.services[0].icon}></Card>
+        <Card title={t('databaseImplementation')} body={t('databaseImplementationDescription')} id={t('5')} icon={services.services[4].icon}></Card>
       </div>
     </div>
     )
