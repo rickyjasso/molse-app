@@ -5,6 +5,7 @@ import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import {GlobeAltIcon} from "@heroicons/react/24/outline"
+import {useTranslation} from 'react-i18next'
 
 
 type Props = {
@@ -14,14 +15,18 @@ type Props = {
 }
 
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
-
+  const {t, i18n} = useTranslation();
   const [language, setLanguage] = useState('ES');
+
+
 
   const handleOnClick = () => {
     if (language === 'ES'){
       setLanguage("EN")
+      i18n.changeLanguage('en')
     } else {
       setLanguage("ES")
+      i18n.changeLanguage('es')
     }
 
     /* TRANSLATE PAGE */
@@ -42,10 +47,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           {isAboveMediumScreens ? (
             <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             </div>
 
             {/* RIGHT SIDE */}
@@ -79,10 +84,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Nosotros" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Servicios" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Contacto" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <div className="my-10">
               <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               </div>

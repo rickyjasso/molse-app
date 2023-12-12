@@ -6,6 +6,7 @@ import Map from "@/shared/Map";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import {useTranslation} from 'react-i18next'
   
 
 type Props = {
@@ -13,7 +14,7 @@ type Props = {
 };
 
 const Contacto = ({setSelectedPage}: Props) => {
-
+  const { t } = useTranslation();
   const isAboveMediumSize = useMediaQuery("(min-width: 1060px)")
   const isAboveMapSize = useMediaQuery("(min-width: 1300px)")
   const isAboveSmSize = useMediaQuery("(min-width: 680px)")
@@ -58,9 +59,14 @@ const Contacto = ({setSelectedPage}: Props) => {
                                visible: {opacity: 1, x:0},
                     }}>
         <HText textSize="text-5xl text-center md:text-start">
-          <span className="text-molse-white">¿Tienes una pregunta?</span> ¡Contactanos!
+          <div className="flex flex-col">
+            <span className="text-molse-white">{t('haveAQuestion')}</span>
+            <span>
+              {t('contactUs')}
+            </span>
+          </div>
         </HText>
-          <p className="my-5 text-molse-white text-xl text-center md:text-start">Ponte en contacto y responderemos lo más pronto posible.</p>
+          <p className="my-5 text-molse-white text-xl text-center md:text-start">{t('getInTouch')}</p>
         </motion.div>
         {/* FORM AND IMG */}
         <div className="mt-10 justify-between gap-8 md:auto">
@@ -77,7 +83,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                   /* AQUI VA EL EMAIL DE MOLSE */ 
                   data-netlify="true">
                   
-                  <input className={inputStyles} type="text" placeholder="Nombre" 
+                  <input className={inputStyles} type="text" placeholder={t('name')} 
                   {...register("name", {
                     required: true,
                     maxLength: 100,
@@ -89,7 +95,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                     </p>
                   )}
 
-                  <input className={inputStyles} type="text" placeholder="Correo" 
+                  <input className={inputStyles} type="text" placeholder={t('email')} 
                   {...register("email", {
                     required: true,
                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -101,7 +107,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                     </p>
                   )}
 
-                  <textarea className={inputStyles} placeholder="Mensaje" rows={4} cols={50}
+                  <textarea className={inputStyles} placeholder={t('message')} rows={4} cols={50}
                   {...register("message", {
                     required: true,
                     maxLength: 2000,
@@ -114,7 +120,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                   )}
 
                   <button type="submit" className={`justify-center mt-5 rounded-lg bg-white px-20 py-3 transition duration-500 hover:text-molse-tertiary hover:bg-molse-secondary text-molse-primary ${isAboveMediumSize ? ``: `w-full`}`}>
-                    Enviar
+                    {t('send')}
                   </button>
 
             </form>
@@ -130,7 +136,7 @@ const Contacto = ({setSelectedPage}: Props) => {
             variants={{hidden: {opacity: 0, x:50},
                        visible: {opacity: 1, x:0},
             }}>
-        <h1 className={`text-5xl font-bold flex justify-center align-middle text-molse-white ${isAboveMediumSize ?  null : `mt-10`}` }>Area de presencia</h1>
+        <h1 className={`text-5xl font-bold flex justify-center align-middle text-molse-white ${isAboveMediumSize ?  null : `mt-10`}` }>{t('presenceArea')}</h1>
         {isAboveMapSize ? (
           <div className="mt-10 justify-between gap-8 md:auto">
             <motion.div className="mt-10 basis-3/5 md:mt-0"
