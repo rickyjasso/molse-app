@@ -27,12 +27,13 @@
     "responsibility": "Responsibility",
     "discipline": "Discipline",
     "tenacity": "Tenacity",
-    "haveAQuestion": "Have a question? Contact us!",
-    "getInTouch": "Get in touch and we will respond as soon as possible.",
+    "haveAQuestion": "Have a question?",
+    "contactUs": "Contact us!",
+    "getInTouch": "Get in touch, and we'll respond as soon as possible.",
     "name": "Name",
     "email": "Email",
     "message": "Message",
     "send": "Send",
-    "presenceArea": "Area of Presence",
+    "presenceArea": "Presence Area",
     "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"]
   }
