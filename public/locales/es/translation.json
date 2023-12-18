@@ -35,6 +35,14 @@
     "message": "Mensaje",
     "send": "Enviar",
     "presenceArea": "Área de Presencia",
-    "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"]
+    "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"],
+    "counseling": "Asesoramiento",
+    "counselingDescription": "Asesoramiento general en todo lo relacionado con el ámbito del Derecho societario, laboral y laboral.",
+    "litigation": "Litigios",
+    "litigationDescription": "Tribunales locales y federales; y asuntos constitucionales en la Corte Suprema de Justicia.",
+    "laborComplianceAndDueDiligence": "Cumplimiento Laboral y Debida Diligencia",
+    "laborComplianceAndDueDiligenceDescription": "Revisar las estrategias laborales y laborales de los clientes buscando siempre mantener a nuestros clientes en pleno cumplimiento de las Normas y leyes Oficiales Mexicanas.",
+    "otherServices": "Otros Servicios",
+    "otherServicesDescription": "Atender asuntos de conflictos o negociaciones sindicales, crear estrategia laboral para evitar contingencias, atender y asesorar todo el año en nuevas planificaciones considerando reformas constitucionales, hacer que nuestros clientes cumplan con todos los asuntos corporativos y de derecho laboral."
   }
   
