@@ -79,7 +79,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                                   visible: {opacity: 1, y:0},
                       }}>
             <form name="contact" onSubmit={onSubmit} method="POST" data-netlify="true">
-                  <input type="hidden" name="contact" value="contact" />
+                  <input type="hidden" name="form-name" value="contact" />
                   <input className={inputStyles} type="text" placeholder={t('name')}
                   {...register("name", {
                     required: true,
