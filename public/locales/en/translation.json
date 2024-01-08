@@ -3,8 +3,8 @@
     "services": "Services",
     "aboutUs": "About Us",
     "contact": "Contact",
-    "seekingToProvide": "SEEKING TO PROVIDE",
-    "servicesWithIntegrity": "SERVICES WITH INTEGRITY",
+    "seekingToProvide": "PROVIDING PROFESSIONAL SERVICES WITH",
+    "servicesWithIntegrity": "THE HIGHEST STANDARDS OF QUALITY AND INTEGRITY",
     "toAllOurClients": "TO ALL OUR CLIENTS",
     "ourServices": "Our Services",
     "theseAreOurServices": "These are our services",
@@ -35,5 +35,13 @@
     "message": "Message",
     "send": "Send",
     "presenceArea": "Presence Area",
-    "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"]
+    "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"],
+    "counseling": "Counseling",
+    "counselingDescription": "General counseling in every matter related to the fields of corporate, labor and employment Laws.",
+    "litigation": "Litigation",
+    "litigationDescription": "Local and federal courts; and constitutional matters at the Supreme Court of Justice.",
+    "laborComplianceAndDueDiligence": "Labor Compliance and Due Diligence",
+    "laborComplianceAndDueDiligenceDescription": "Reviewing clients employment and labor strategies always seeking to maintain our clients in full compliance with Official Mexican Standards and laws.",
+    "otherServices": "Other Services",
+    "otherServicesDescription": "Attending matters of Unions conflicts or negotiations, creating labor strategy for avoiding contingencies, attending and giving advice all year regarding new plannings considering amendments to the constitution, having our clients in compliance with every corporate and labor law matters."
   }
