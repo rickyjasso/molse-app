@@ -78,12 +78,9 @@ const Contacto = ({setSelectedPage}: Props) => {
                       variants={{hidden: {opacity: 0, y:50},
                                   visible: {opacity: 1, y:0},
                       }}>
-            <form target="_blank" onSubmit={onSubmit} 
-                  method="POST" 
-                  /* AQUI VA EL EMAIL DE MOLSE */ 
-                  data-netlify="true">
-                  
-                  <input className={inputStyles} type="text" placeholder={t('name')} 
+            <form name="contact" onSubmit={onSubmit} method="POST" data-netlify="true">
+                  <input type="hidden" name="contact" value="contact" />
+                  <input className={inputStyles} type="text" placeholder={t('name')}
                   {...register("name", {
                     required: true,
                     maxLength: 100,
