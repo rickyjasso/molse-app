@@ -22,11 +22,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
   const handleOnClick = () => {
     if (language === 'ES'){
-      setLanguage("ES")
-      i18n.changeLanguage('es')
-    } else {
       setLanguage("EN")
       i18n.changeLanguage('en')
+    } else {
+      setLanguage("ES")
+      i18n.changeLanguage('es')
     }
 
     /* TRANSLATE PAGE */
