@@ -65,9 +65,15 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
           </div>
           ) : (
-            <button className="rounded-full  p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <Bars3Icon className="h-6 w-6 text-molse-primary"/>
-            </button>
+            <div className="flex">
+              <button value={language} onClick={handleOnClick} className={`mx-2 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
+                  <span className="text-xs">{language}</span>
+                  <GlobeAltIcon className={`float-left mr-1 h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
+              </button>
+              <button className="rounded-full  p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                <Bars3Icon className={`h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
+              </button>
+            </div>
           )}
         </div>
       </div>
