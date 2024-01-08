@@ -46,7 +46,7 @@ const Contacto = ({setSelectedPage}: Props) => {
   }
   
   return (
-    <div className="bg-molse-primary">
+    <div id="contact" className="bg-molse-primary">
       <section id="contacto" className={isAboveMediumSize ? `mx-auto w-5/6 pt-12 pb-16 flex` : `mx-auto w-5/6 pt-12 pb-16 flex-col`}>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
         {/* HEADER */}

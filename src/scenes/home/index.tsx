@@ -16,6 +16,7 @@ const Home = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   
   return (
+    <section id="inicio">
     <section id="home" className={`bg-blend-overlay bg-black/30 bg-home bg-cover ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center align-middle`} >
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-5/6">
         <div className="text-molse-white text-center">
@@ -31,6 +32,7 @@ const Home = ({setSelectedPage}: Props) => {
 
       </motion.div>
     
+    </section>
     </section>
   )
 }

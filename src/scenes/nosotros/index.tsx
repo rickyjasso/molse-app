@@ -24,6 +24,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
     }
 
   return (
+    <section id="aboutus">
     <section id="nosotros" className="mx-auto sm:w-5/6 pt-24 pb-32 text-black">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Nosotros)} className="md:flex relative z-10">
         <div className="md:absolute z-20">
@@ -62,6 +63,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
           <img className="" src="https://brujuladigital.net/images/news/es/b_24516_bolivianos-de-experiencia-y-trayectoria-en-el-sector-empresarial-dan-vida-a-braq-empresa-de-servicios-corporativos-1.jpeg" alt="" />
         </div>
       </motion.div>
+    </section>
     </section>
   )
 }
