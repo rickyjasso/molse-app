@@ -51,6 +51,8 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+
             </div>
 
             {/* RIGHT SIDE */}
