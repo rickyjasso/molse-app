@@ -35,11 +35,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "text-white" : "bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
+  const navbarBackground = " fixed bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
 
   return(
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6`}>
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           {/* LEFT SIDE */}
@@ -47,20 +47,20 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           {isAboveMediumScreens ? (
             <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={isTopOfPage ? "hover:text-white": "hover:text-molse-primary"} selectedColor={isTopOfPage ? "text-white": "text-molse-primary"} unselectedColor = {isTopOfPage ? "text-white": "text-gray-40"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
 
             </div>
 
             {/* RIGHT SIDE */}
             <div className={`${flexBetween} gap-8`}>
               <div className="flex items-center justify-center">
-                <button value={language} onClick={handleOnClick} className={`mx-5 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
+                <button value={language} onClick={handleOnClick} className={`mx-5 ${"text-molse-primary transition duration-500"}`}>
                   {language}
-                  <GlobeAltIcon className={`float-left mr-2 h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
+                  <GlobeAltIcon className={`float-left mr-2 h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
                 </button>
               </div>
             </div>
@@ -68,12 +68,12 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           </div>
           ) : (
             <div className="flex">
-              <button value={language} onClick={handleOnClick} className={`mx-2 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}>
+              <button value={language} onClick={handleOnClick} className={`mx-2 ${"text-molse-primary transition duration-500"}`}>
                   <span className="text-xs">{language}</span>
-                  <GlobeAltIcon className={`float-left mr-1 h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
+                  <GlobeAltIcon className={`float-left mr-1 h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
               </button>
               <button className="rounded-full  p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <Bars3Icon className={`h-6 w-6 ${isTopOfPage? "text-white":"text-molse-primary transition duration-500"}`}/>
+                <Bars3Icon className={`h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
               </button>
             </div>
           )}
