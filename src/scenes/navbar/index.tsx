@@ -9,12 +9,11 @@ import {useTranslation} from 'react-i18next'
 
 
 type Props = {
-    isTopOfPage: boolean;
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const {t, i18n} = useTranslation();
   const [language, setLanguage] = useState('ES');
 
