@@ -15,7 +15,7 @@ export default function MapChart() {
     { markerOffsetX: 15, markerOffset: -30, name: "QRO", coordinates: [-100.39030857351007, 20.589300224112264] },
     { markerOffsetX: 0, markerOffset: 15, name: "ACP", coordinates: [-99.88085221753593, 16.86435927860148] },
     { markerOffsetX: 0, markerOffset: 15, name: "TIJ", coordinates: [-116.93914445794728, 32.49547740447609] },
-    { markerOffsetX: 0, markerOffset: 15, name: "TRC", coordinates: [-103.34635125837403, 26.044549041199524] },
+    { markerOffsetX: 0, markerOffset: 15, name: "HMO", coordinates: [-110.95654614321226, 29.07560503016933] },
     { markerOffsetX: 0, markerOffset: 15, name: "AGS", coordinates: [-102.21087277281784, 22.03049257146035] },
     { markerOffsetX: 0, markerOffset: 15, name: "SAL", coordinates: [-100.97372316983859, 25.43821488280707 ] }
 

@@ -22,13 +22,13 @@ const Contacto = ({setSelectedPage}: Props) => {
   const listStyles = `flex ${isAboveMediumSize ? `justify-center w-full` : `justify-center w-1/3` } ${isAboveSmSize ? ``:`justify-start w-full`} text-xl text-bold my-5 align-middle`
   const ciudadesPresencia = [
     'Monterrey',
-    'Tijuana',
-    'Saltillo',
-    'Torreon',
-    'Guadalajara',
-    'Aguascalientes',
-    'Queretaro',
     'Ciudad de México',
+    'Guadalajara',
+    'Queretaro',
+    'Saltillo',
+    'Hermosillo',
+    'Tijuana',
+    'Aguascalientes',
     'Acapulco',
   ]
 
