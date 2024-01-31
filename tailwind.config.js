@@ -25,7 +25,7 @@ export default {
         "molse-white": "#DFDDDB",
         "molse-text": "#1F2859",
         "molse-contrast": "#E0D7A6",
-        "navbar-scroll": "RGBA(255,255,255)"
+        "navbar-scroll": "RGBA(230,230,230)"
     },
     
 
@@ -42,6 +42,8 @@ export default {
       montserrat: ["Montserrat", "sans-serif"],
       timesnewroman: ["Times New Roman", "serif"],
       garamond: ['EB Garamond', "serif"],
+      ptserif: ['PT Serif', 'serif'],
+
     },
 
     // TODO: CHOOSE CONTENT IMAGES FROM FIGMA

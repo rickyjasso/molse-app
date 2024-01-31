@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid"
-import Logo from "/assets/Logo-transparent.png"
+import Logo from "/assets/logomol.png"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
@@ -46,11 +46,11 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
           {isAboveMediumScreens ? (
             <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-gray-40"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
 
             </div>
 
@@ -82,7 +82,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
 
       {/* MOBILE MENU MODEAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-molse-white drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-navbar-scroll">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text-molse-primary"/>
@@ -91,12 +91,12 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <div className="my-10">
-              <Link hoverColor={"hover:text-molse-primary"} selectedColor="text-molse-primary" unselectedColor={"text-gray-40"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               </div>
             </div>
         </div>
