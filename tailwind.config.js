@@ -25,7 +25,9 @@ export default {
         "molse-white": "#DFDDDB",
         "molse-text": "#1F2859",
         "molse-contrast": "#E0D7A6",
-        "navbar-scroll": "RGBA(230,230,230)"
+        "navbar-scroll": "RGBA(230,230,230)",
+        "bgcontacto" : "#02033d",
+        "contactus" : "#c9b3b5"
     },
     
 

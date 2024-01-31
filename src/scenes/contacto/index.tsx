@@ -46,7 +46,7 @@ const Contacto = ({setSelectedPage}: Props) => {
   }
   
   return (
-    <div id="contact" className="bg-molse-primary">
+    <div id="contact" className="bg-bgcontacto">
       <section id="contacto" className={isAboveMediumSize ? `mx-auto w-5/6 pt-12 pb-16 flex` : `mx-auto w-5/6 pt-12 pb-16 flex-col`}>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}>
         {/* HEADER */}
@@ -61,9 +61,7 @@ const Contacto = ({setSelectedPage}: Props) => {
         <HText textSize="text-5xl text-center md:text-start">
           <div className="flex flex-col">
             <span className="text-molse-white">{t('haveAQuestion')}</span>
-            <span>
-              {t('contactUs')}
-            </span>
+            <span className = "text-contactus">{t('contactUs')}</span>
           </div>
         </HText>
           <p className="my-5 text-molse-white text-xl text-center md:text-start">{t('getInTouch')}</p>
