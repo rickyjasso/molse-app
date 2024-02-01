@@ -26,7 +26,7 @@ const Servicios = ({setSelectedPage}: Props) => {
         <Card title={t('laborComplianceAndDueDiligence')} body={t('laborComplianceAndDueDiligenceDescription')} id={t('3')} icon={services.services[2].icon}></Card>
       </div>
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/2" : ""}`}>
-        <Card title={t('PLACEHOLDER')} body={t('PLACEGOLDER')} id={t('3')} icon={services.services[2].icon}></Card>
+        <Card title={t('workrights')} body={t('workrightsdesc')} id={t('3')} icon={services.services[3].icon}></Card>
       </div>
     </div>
     )

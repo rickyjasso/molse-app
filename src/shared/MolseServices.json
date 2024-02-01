@@ -23,14 +23,8 @@
         "id": 4,
         "title": "Citas Concilatorias",
         "body": ["Prestamos atención a citas conciliatorias de carácter prejudicial, de acuerdo con el Nuevo Sistema de Justicia Laboral"],
-        "icon" : "icons\\otherlaw.png"
+        "icon" : "icons\\workrights.png"
 
-    },
-    {
-      "id": 5,
-      "title": "Implementacion de Base de datos",
-      "body": ["Ofrecemos la implementación de base de datos a traves de una plataforma digital, donde la empresa tendra acceso a toda la informacion y documentacion solicitada"],
-      "icon" : "icons\\otherlaw.png"
     }
     ]
   }
