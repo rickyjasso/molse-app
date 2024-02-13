@@ -34,7 +34,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = " fixed bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
+  const navbarBackground = "fixed top-0 bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
 
   return(
     <nav>
@@ -49,6 +49,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
 
@@ -94,6 +95,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <div className="my-10">
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>

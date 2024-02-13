@@ -32,7 +32,7 @@ export default function MapChart() {
  */}      <Geographies geography={geoUrl} >
         {({ geographies }) =>
           geographies.map((geo) => (
-            <Geography key={geo.rsmKey} geography={geo} fill="#A59596"style={{
+            <Geography key={geo.rsmKey} geography={geo} fill="#1F2859"style={{
               default: { outline: "none" },
               hover: { outline: "none" },
               pressed: { outline: "none" },

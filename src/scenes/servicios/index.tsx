@@ -15,7 +15,7 @@ const Servicios = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   const servicesElements = (
-    <div className="flex flex-wrap">
+    <div className="flex md:flex-wrap md:flex-row flex-col">
       <div className={`align-middle justify-center text-center ${isAboveMediumScreens ? "w-1/2" : ""}`}>
         <Card title={t('counseling')} body={t('counselingDescription')} id={t('1')} icon={services.services[0].icon}></Card>
       </div>
@@ -39,7 +39,7 @@ const Servicios = ({setSelectedPage}: Props) => {
         <div className="flex-row justify-center align-middle text-center">
           <HText textSize="text-3xl"> <span className="text-molse-primary"> {t('ourServices')} </span></HText>
         </div>
-        <div className={isAboveMediumScreens ? "flex my-3 flex-wrap" : "flex flex-col my-6"}>
+        <div className="flex md:my-3 md:flex-wrap flex-col my-6">
           {servicesElements}
         </div>
       </motion.div>

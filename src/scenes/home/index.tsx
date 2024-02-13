@@ -25,8 +25,8 @@ const Home = ({setSelectedPage}: Props) => {
             <span className={`${isAboveMediumScreens ? "text-6xl text-bold" : "text-3xl text-center"}`}>{t('servicesWithIntegrity')}</span>
             {t('toAllOurClients')}
           </p> */}
-            <span className=""> <HText textSize={isAboveMediumScreens?"text-7xl my-2": "text-2xl my-1"}>{t('servicesWithIntegrity')}</HText></span> 
-            <span className={`${isAboveMediumScreens ? "my-2 text-5xl text-center" : "text-lg text-center my-1"}`}>{t('toAllOurClients')}</span></p>
+            <span className=""> <HText textSize="text-7xl font-bold my-2">{t('servicesWithIntegrity')}</HText></span> 
+            <span className="md:text-xl text-lg">{t('toAllOurClients')}</span></p>
           <div className="flex justify-evenly align-middle px-10">
             <ActionButton setSelectedPage={setSelectedPage}>{t('ourServicesButton')}</ActionButton>                                     
             {/* <ActionButton setSelectedPage={setSelectedPage}>Noticias</ActionButton>    */}                                    

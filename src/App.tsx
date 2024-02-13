@@ -5,6 +5,7 @@ import Servicios from "@/scenes/servicios";
 import Contacto from "@/scenes/contacto";
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types";
+import AreaPresencia from "./scenes/areapresencia";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}></Home>
       <Servicios setSelectedPage={setSelectedPage}></Servicios>
       <Nosotros setSelectedPage={setSelectedPage}></Nosotros>
+      <AreaPresencia setSelectedPage={setSelectedPage}></AreaPresencia>
       <Contacto setSelectedPage={setSelectedPage}></Contacto>
     </div>
   )
