@@ -34,11 +34,11 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = "fixed top-0 bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
+  const navbarBackground = "top-0 bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
 
   return(
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6`}>
+      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6 md:fixed`}>
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           {/* LEFT SIDE */}
@@ -68,10 +68,6 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
           </div>
           ) : (
             <div className="flex">
-              <button value={language} onClick={handleOnClick} className={`mx-2 ${"text-molse-primary transition duration-500"}`}>
-                  <span className="text-xs">{language}</span>
-                  <GlobeAltIcon className={`float-left mr-1 h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
-              </button>
               <button className="rounded-full  p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <Bars3Icon className={`h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
               </button>
@@ -91,15 +87,20 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className="ml-[33%] flex flex-col gap-10 text-2xl h-96">
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('home')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <a href="https://blog.molseabogados.com" className="hover:text-black text-molse-primary text-lg" target="_blank" rel="noopener noreferrer">{t('news')}</a>
-              
-            </div>
+              <div className="flex mt-auto">
+                <button value={language} onClick={handleOnClick} className={`flex items-end align-bottom ${"text-molse-primary transition duration-500"}`}>
+                    <GlobeAltIcon className={`float-left mr-1 h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
+                    <span className="text-lg">{language}</span>
+                </button>
+              </div>
+              </div>
         </div>
       )}
     </nav>
