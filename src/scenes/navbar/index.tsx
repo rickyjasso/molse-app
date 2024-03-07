@@ -34,11 +34,11 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex justify-between items-center";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = "fixed top-0 bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
+  const navbarBackground = "top-0 bg-navbar-scroll drop-shadow transition duration-500"; //TODO: Change BG TO MOLSE COLOR
 
   return(
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6`}>
+      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6 md:fixed`}>
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           {/* LEFT SIDE */}
