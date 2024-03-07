@@ -51,7 +51,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('news')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <a href="https://blog.molseabogados.com" className="hover:text-black text-molse-primary text-lg" target="_blank" rel="noopener noreferrer">{t('news')}</a>
 
             </div>
 
@@ -97,9 +97,8 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <div className="my-10">
-              <Link hoverColor={"hover:text-black"} selectedColor="text-black" unselectedColor={"text-molse-primary"} page="Noticias" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              </div>
+              <a href="https://blog.molseabogados.com" className="hover:text-black text-molse-primary text-lg" target="_blank" rel="noopener noreferrer">{t('news')}</a>
+              
             </div>
         </div>
       )}
