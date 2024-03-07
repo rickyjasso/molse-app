@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 html,
-body,
+body {
+    overflow-x: hidden;
+}
 #root,
 .app{
     height: 100%;
