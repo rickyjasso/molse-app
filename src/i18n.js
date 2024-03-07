@@ -12,6 +12,7 @@ i18n
     returnEmptyString: false,
     debug: true,
     fallbackLng: 'es',
+    lng: 'es',
   });
 
 // i18n.services.formatter.add('DATE_LONG', (value, lng, _options) => {

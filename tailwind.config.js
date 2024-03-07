@@ -25,13 +25,15 @@ export default {
         "molse-white": "#DFDDDB",
         "molse-text": "#1F2859",
         "molse-contrast": "#E0D7A6",
-        "navbar-scroll": "RGBA(255,255,255)"
+        "navbar-scroll": "RGBA(230,230,230)",
+        "bgcontacto" : "#02033d",
+        "contactus" : "#c9b3b5"
     },
     
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA
     backgroundImage: {
-      'home': 'url(src/assets/header-img.jpeg)',
+      'home': 'url(/assets/header-img.jpeg)',
     },
     filter: {
       'grayscale-100': 'grayscale(100%)',
@@ -42,6 +44,8 @@ export default {
       montserrat: ["Montserrat", "sans-serif"],
       timesnewroman: ["Times New Roman", "serif"],
       garamond: ['EB Garamond', "serif"],
+      ptserif: ['PT Serif', 'serif'],
+
     },
 
     // TODO: CHOOSE CONTENT IMAGES FROM FIGMA

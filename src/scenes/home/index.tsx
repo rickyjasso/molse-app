@@ -16,21 +16,26 @@ const Home = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   
   return (
-    <section id="home" className={`bg-blend-overlay bg-black/30 bg-home bg-cover ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center align-middle`} >
+    <section id="inicio">
+    <section id="home" className={`bg-blend-overlay bg-[#4B4F58]/90 bg-home bg-cover ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center align-middle`} >
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-5/6">
-        <div className="text-molse-white text-center">
-          <p className={`flex flex-col ${isAboveMediumScreens ? "text-5xl text-center" : "text-2xl text-center"} mb-6 mt-5`}>
-            <span className="my-2">{t('seekingToProvide')}</span> 
-            <span className="my-2"> <HText textSize={isAboveMediumScreens?"text-7xl": "text-3xl"}>{t('servicesWithIntegrity')}</HText></span> 
-            <span className="my-2">{t('toAllOurClients')}</span></p>
+        <div className="text-white text-center">
+          <p className={`flex flex-col ${isAboveMediumScreens ? "text-5xl text-center" : "text-xl text-center"} mb-6 mt-5`}>
+            {/* {t('seekingToProvide')}
+            <span className={`${isAboveMediumScreens ? "text-6xl text-bold" : "text-3xl text-center"}`}>{t('servicesWithIntegrity')}</span>
+            {t('toAllOurClients')}
+          </p> */}
+            <span className=""> <HText textSize="text-7xl font-bold my-2">{t('servicesWithIntegrity')}</HText></span> 
+            <span className="md:text-xl text-lg">{t('toAllOurClients')}</span></p>
           <div className="flex justify-evenly align-middle px-10">
-            <ActionButton setSelectedPage={setSelectedPage}>{t('ourServices')}</ActionButton>                                     
+            <ActionButton setSelectedPage={setSelectedPage}>{t('ourServicesButton')}</ActionButton>                                     
             {/* <ActionButton setSelectedPage={setSelectedPage}>Noticias</ActionButton>    */}                                    
           </div>
         </div>
 
       </motion.div>
     
+    </section>
     </section>
   )
 }
