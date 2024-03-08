@@ -10,7 +10,7 @@ const Card = ({ title, body, id, icon }: Props) => {
 
   return (
     <div className="relative">
-      <div className="group flex-col mx-3 my-5 p-6 bg-white border rounded-xl shadow border-gray-700 md:hover:bg-molse-primary h-full flex items-center">
+      <div className="group flex-col mx-3 my-5 p-6 bg-white border rounded-xl shadow border-gray-700 md:hover:bg-molse-primary h-full flex items-center md:hover:scale-105 transition-all">
         {icon && <img src={icon} alt={`${title} Icon`} className="w-12 h-12 mb-4" />}
         <div className="flex items-center align-middle relative">
           <h3 className="absolute left-1/2 text-7xl transform -translate-x-1/2 font-bold opacity-10 text-molse-primary md:group-hover:text-white">
