@@ -56,9 +56,9 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
                         {ciudadesPresencia[0]}
                     </div>
                     <h2 className="underline mt-3 mb-3 text-xl">{t('corresponsalias')}:</h2>
-                    <ul className="text-white flex flex-wrap-reverse justify-center text-xl align-middle pb-10">
+                    <ul className="text-white flex flex-wrap-reverse justify-center items-center text-xl align-middle pb-10">
                         {ciudadesPresencia.slice(1).map((city, index) => (
-                        <li className={`w-1/3 my-6`} key={index}>
+                        <li className={`w-1/3 my-6 text-center`} key={index}>
                             <span className="mr-2 mt-1">
                             <FontAwesomeIcon icon={faLocationDot} />
                             </span>
