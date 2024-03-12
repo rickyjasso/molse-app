@@ -32,9 +32,7 @@
     "responsibility": "Responsabilidad",
     "discipline": "Disciplina",
     "tenacity": "Tenacidad",
-    "haveAQuestion": "¿Tienes una pregunta?",
-    "contactUs": "¡Contactanos!",
-    "getInTouch": "Ponte en contacto y responderemos lo más pronto posible.",
+    "contactoText": "¡Estamos a tus órdenes!",
     "name": "Nombre",
     "email": "Correo",
     "message": "Mensaje",
@@ -53,6 +51,10 @@
     "workrights" : "Asesoría y ejecución en el Área del Derecho Laboral Colectivo",
     "workrightsdesc" : "Orientamos y acompañamos en los procesos de celebración del Contrato Colectivo de Trabajo con los Sindicatos, garantizando el debido cumplimiento normativo.",
     "oficinasSede": "Oficinas Sede",
-    "corresponsalias": "Corresponsalías"
+    "corresponsalias": "Corresponsalías",
+    "cf1": "Nombre y Empresa",
+    "cf2": "Correo",
+    "cf3": "Telefono",
+    "cf4": "Duda o mensaje"
   }
   

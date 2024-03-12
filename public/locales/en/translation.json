@@ -32,8 +32,7 @@
     "responsibility": "Responsibility",
     "discipline": "Discipline",
     "tenacity": "Tenacity",
-    "haveAQuestion": "Have a question?",
-    "contactUs": "Contact us!",
+    "contactoText": "We are at your service!",
     "getInTouch": "Get in touch, and we'll respond as soon as possible.",
     "name": "Name",
     "email": "Email",
@@ -53,5 +52,9 @@
     "workrights" : "Advice and execution in the Area of Collective Labor Law",
     "workrightsdesc" : "We provide guidance and assistance in the processes of execution of collective bargaining agreements entered into with labor unions, in order to guarantee the due compliance with the rules during the process and after its conclusion.",
     "oficinasSede": "Headquarters",
-    "corresponsalias": "Correspondents"
+    "corresponsalias": "Correspondents",
+    "cf1": "Name and Company",
+    "cf2": "Email",
+    "cf3": "Phone",
+    "cf4": "Question or message"
   }
