@@ -16,10 +16,10 @@ const Card = ({ title, body, id, icon }: Props) => {
           <h3 className="absolute left-1/2 text-9xl transform -translate-x-1/2  font-bold opacity-30 text-molse-secondary ">
             0{id}
           </h3>
-          <h5 className="my-3 md:text-4xl text-3xl font-bold text-center tracking-wide text-molse-primary z-10">{title}</h5>
+          <h5 className="my-3 md:text-4xl text-2xl font-bold text-center tracking-wide text-molse-primary z-10">{title}</h5>
         </div>
         {bodyArray.map((paragraph, index) => (
-          <p key={index} className="my-5 tracking-widest font-normal md:text-lg text-base text-molse-secondary md:text-justify text-center relative z-10">
+          <p key={index} className="my-5 tracking-widest font-normal md:text-lg text-base text-molse-secondary md:text-justify text-start relative z-10">
             {paragraph}
           </p>
         ))}

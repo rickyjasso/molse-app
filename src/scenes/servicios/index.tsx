@@ -32,7 +32,7 @@ const Servicios = ({setSelectedPage}: Props) => {
     )
 
   return (
-    <div id="services" className="bg-molse-white pt-12 pb-16">
+    <div id="services" className="bg-navbar-scroll pt-12 pb-16">
       {/* <section id="services"></section> */}
     <section id="servicios" className="mx-auto w-5/6">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Servicios)}>

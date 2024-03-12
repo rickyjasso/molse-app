@@ -24,7 +24,7 @@ const Nosotros = ({setSelectedPage}: Props) => {
     }
 
   return (
-    <section id="aboutus">
+    <section id="aboutus" className="bg-molse-white">
     <section id="nosotros" className="mx-auto sm:w-5/6 pt-24 pb-32 text-molse-primary">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Nosotros)} className="md:flex relative z-10">
         <div>

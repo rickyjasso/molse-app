@@ -39,8 +39,8 @@
     "email": "Email",
     "message": "Message",
     "send": "Send",
-    "presenceArea": "Presence Area",
-    "presenceAreaText": "We provide our services in differente cities of Mexico.",
+    "presenceArea": "Presence and Service",
+    "presenceAreaText": "We provide specialized service to our clients in different cities of Mexico, constantly explanding and creating partnerships in the country.",
     "cities": ["MTY", "CDMX", "GDL", "QRO", "ACP"],
     "counseling": "Counseling",
     "counselingDescription": "General counseling in every matter related to the fields of corporate, labor and employment Laws.",
@@ -51,5 +51,7 @@
     "otherServices": "Other Services",
     "otherServicesDescription": "Attending matters of Unions conflicts or negotiations, creating labor strategy for avoiding contingencies, attending and giving advice all year regarding new plannings considering amendments to the constitution, having our clients in compliance with every corporate and labor law matters.",
     "workrights" : "Advice and execution in the Area of Collective Labor Law",
-    "workrightsdesc" : "We provide guidance and assistance in the processes of execution of collective bargaining agreements entered into with labor unions, in order to guarantee the due compliance with the rules during the process and after its conclusion."
+    "workrightsdesc" : "We provide guidance and assistance in the processes of execution of collective bargaining agreements entered into with labor unions, in order to guarantee the due compliance with the rules during the process and after its conclusion.",
+    "oficinasSede": "Headquarters",
+    "corresponsalias": "Correspondents"
   }
