@@ -38,11 +38,11 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
 
   return(
     <nav>
-      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-6 md:fixed`}>
+      <div className={`${navbarBackground} ${flexBetween} top-0 z-30 w-full py-2 md:fixed`}>
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           {/* LEFT SIDE */}
-          <img alt="logo"className="h-12" src={Logo} />
+          <img alt="logo"className="h-16" src={Logo} />
           {isAboveMediumScreens ? (
             <div className={`${flexBetween} w-full gap-16`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
@@ -50,7 +50,6 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('services')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('aboutUs')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> {/* AQUI VA A IR AREA DE PRESENCIA */}
               <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('presencearea')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <a href="https://blog.molseabogados.com" className="hover:text-black text-molse-primary text-lg" target="_blank" rel="noopener noreferrer">{t('news')}</a>
 
             </div>
@@ -58,9 +57,12 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
             {/* RIGHT SIDE */}
             <div className={`${flexBetween} gap-8`}>
               <div className="flex items-center justify-center">
+              <Link hoverColor={"hover:text-black"} selectedColor={ "text-molse-primary"} unselectedColor = { "text-molse-primary"} page={t('contact')} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 <button value={language} onClick={handleOnClick} className={`mx-5 ${"text-molse-primary transition duration-500"}`}>
+              <div className="flex items-center ml-4">
+                  <GlobeAltIcon className={`float-left mr-1 h-8 w-8 ${"text-molse-primary transition duration-500"}`}/>
                   {language}
-                  <GlobeAltIcon className={`float-left mr-2 h-6 w-6 ${"text-molse-primary transition duration-500"}`}/>
+              </div>
                 </button>
               </div>
             </div>
