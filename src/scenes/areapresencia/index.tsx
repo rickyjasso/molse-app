@@ -46,7 +46,7 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
         <p className="mt-3 md:text-2xl text-lg md:text-start text-center text-molse-secondary">{t('presenceAreaText')}</p>
         <div className="mt-10 flex items-center">
             <div>
-            <div className="bg-molse-primary">
+            <div className="bg-molse-primary w-full md:w-4/5 lg:w-3/4 xl:w-2/3 -mx-3 p-5">
                 <div className="mx-5 my-5 md:block hidden">
                     <h2 className="underline py-5 text-xl">{t('oficinasSede')}:</h2>
                     <div className="text-white mb-8 text-xl">
@@ -80,7 +80,7 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
                     ))}
                 </ul>
             </div>
-            <div className="flex-shrink-0 w-full max-w-2xl lg:max-w-4xl md:block hidden">
+            <div className="flex-shrink-0 w-full items-end md:w-[34rem] md:block hidden">
                 <Map />
             </div>
         </div>

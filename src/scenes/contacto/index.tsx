@@ -178,7 +178,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                     <div className="md:bg-molse-secondary p-2 rounded-full md:mr-8">
                       <img className="w-8 h-8" src={Phone} alt="Telefono Molse Abogados" />
                     </div>
-                    <p className="ml-2">+123-456-789</p>
+                    <p className="ml-2">+52 81-8340-2133</p>
                   </div>
                   <div className="flex items-center mb-8">
                     <div className="md:bg-molse-secondary p-2 rounded-full md:mr-8">

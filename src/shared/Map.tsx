@@ -25,8 +25,8 @@ export default function MapChart() {
   return (
     <ComposableMap projection="geoAlbers"
     projectionConfig={{
-      center:[-10, 22],
-      scale: 1250
+      center:[-5, 25],
+      scale: 1500
     }}>
 {/*       <ZoomableGroup center={[0, 0]} zoom={1}>
  */}      <Geographies geography={geoUrl} >
