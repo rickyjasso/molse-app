@@ -80,7 +80,7 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
                     ))}
                 </ul>
             </div>
-            <div className="flex-shrink-0 w-full max-w-2xl md:block hidden">
+            <div className="flex-shrink-0 w-full max-w-2xl lg:max-w-4xl md:block hidden">
                 <Map />
             </div>
         </div>

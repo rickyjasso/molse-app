@@ -171,23 +171,30 @@ const Contacto = ({setSelectedPage}: Props) => {
                   </button>
                 </form>
               </div>
+
               <div className="flex items-center md:mt-0 mt-10">
-                <div className="flex flex-col text-white text-xl">
-                  <div className="flex items-center mb-4">
-                    <img className="w-12 h-12" src={Phone} alt="Telefono Molse Abogados" />
+                <div className="flex flex-col text-white md:text-xl text-lg">
+                  <div className="flex items-center mb-8">
+                    <div className="md:bg-molse-secondary p-2 rounded-full md:mr-8">
+                      <img className="w-8 h-8" src={Phone} alt="Telefono Molse Abogados" />
+                    </div>
                     <p className="ml-2">+123-456-789</p>
                   </div>
-                  <div className="flex items-center mb-4">
-                    <img className="w-12 h-12" src={Mail} alt="Correo de contacto Molse Abogados" />
-                    <p className="ml-2">contacto@molseabogados.com</p>
+                  <div className="flex items-center mb-8">
+                    <div className="md:bg-molse-secondary p-2 rounded-full md:mr-8">
+                      <img className="w-8 h-8" src={Mail} alt="Correo de contacto Molse Abogados" />
+                    </div>
+                      <p className="ml-2">contacto@molseabogados.com</p>
                   </div>
                   <div className="flex items-center">
-                    <img className="w-12 h-12" src={Pin} alt="Ubicación Molse Abogados" />
-                    <p className="ml-2 flex flex-col">
-                      <span>Molse Abogados, S.C.</span>
-                      <span>Calle 05 de mayo pte, 901-7, Colonia Centro.</span>
-                      <span>Monterrey, Nuevo León, México, C.P. 64000</span>
-                    </p>
+                    <div className="md:bg-molse-secondary p-2 rounded-full md:mr-8">
+                      <img className="w-8 h-8" src={Pin} alt="Ubicación Molse Abogados" />
+                    </div>
+                    <div className="flex flex-col text-sm md:text-xl">
+                      <p className="ml-2">Molse Abogados, S.C.</p>
+                      <p className="ml-2">Calle 05 de mayo pte, 901-7, Colonia Centro.</p>
+                      <p className="ml-2">Monterrey, Nuevo León, México, C.P. 64000</p>
+                    </div>
                   </div>
                 </div>
               </div>
