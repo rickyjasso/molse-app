@@ -29,7 +29,10 @@ export default {
         "bgcontacto" : "#02033d",
         "contactus" : "#c9b3b5"
     },
-    
+    letterSpacing: {
+      molsewide: '.15em',
+      abogadoswide: '.5em'
+    },
 
     // TODO: CHANGE BACKGROUND IMAGE COLORS FROM FIGMA
     backgroundImage: {
