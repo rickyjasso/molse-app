@@ -36,7 +36,7 @@ const Servicios = ({setSelectedPage}: Props) => {
       {/* <section id="services"></section> */}
     <section id="servicios" className="mx-auto w-5/6">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Servicios)}>
-        <div className="flex-row justify-center align-middle text-center">
+        <div className="flex-row justify-center align-middle text-start">
           <HText textSize="text-3xl"> <span className="text-molse-primary"> {t('ourServices')} </span></HText>
         </div>
         <div className="flex md:my-3 md:flex-wrap flex-col my-6">
