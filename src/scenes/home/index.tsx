@@ -16,7 +16,7 @@ const Home = ({ setSelectedPage }: Props) => {
   
   return (
     <section id="inicio">
-      <section id="home" className={`bg-blend-overlay bg-molse-primary/50 bg-home bg-cover bg-bottom ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center`} >
+      <section id="home" className={`bg-blend-overlay bg-molse-primary/40 bg-home bg-cover bg-bottom ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center`} >
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-full mx-auto text-center">
           <div className="text-white">
             <div className="mb-16 md:mt-20 text-center">
