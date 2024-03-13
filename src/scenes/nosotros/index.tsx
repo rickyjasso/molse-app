@@ -43,6 +43,9 @@ const Nosotros = ({setSelectedPage}: Props) => {
             <div className="bg-white md:w-3/5 drop-shadow-xl py-5 px-10 text-xl font-medium tracking-wider md:text-justify">
             <div className={isActive ? 'hidden' : 'block my-5'}>
                 <p>{t('trajectoryDescription')}</p>
+                <br></br>
+                <p>{t('trajectoryDescription2')}</p>
+
                 <img src="" alt="" />
               </div>
               <div className={isActive ? 'block my-5' : 'hidden'}>
