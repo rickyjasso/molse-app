@@ -95,7 +95,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                 {/* Email */}
                 <div className="w-1/2 pr-2">
                   <label htmlFor="email" className="block text-xl text-molse-white mb-2">
-                    Correo:
+                  {t('cf2')}:
                   </label>
                   <input
                     id="email"
@@ -117,7 +117,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                 {/* Phone */}
                 <div className="w-1/2 pl-2">
                   <label htmlFor="phone" className="block text-xl text-molse-white mb-2">
-                    Teléfono:
+                  {t('cf3')}:
                   </label>
                   <input
                     id="phone"
