@@ -16,12 +16,32 @@ const Home = ({ setSelectedPage }: Props) => {
   
   return (
     <section id="inicio">
-      <section id="home" className={`bg-blend-overlay bg-[#4B4F58]/90 bg-home bg-cover ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center`} >
-        <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-full max-w-5xl mx-auto text-center">
+      <section id="home" className={`bg-blend-overlay bg-molse-primary/40 bg-home bg-cover bg-bottom ${isAboveMediumScreens ? "bg-center" : ""} h-screen pt-12 pb-16 flex justify-center items-center`} >
+        <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-full mx-auto text-center">
           <div className="text-white">
-            <HText textSize="text-7xl font-bold my-2">{t('servicesWithIntegrity')}</HText>
-            <p className="md:text-xl text-lg">{t('toAllOurClients')}</p>
-            <div className="flex justify-center space-x-4 pt-4">
+            <div className="mb-16 md:mt-20 text-center">
+              <HText textSize="md:text-9xl font-thin my-2 md:tracking-widest mb-4 text-8xl">{t('molse')}</HText>
+              <HText textSize="md:text-5xl font-thin my-2 tracking-molsewide md:tracking-abogadoswide text-4xl">{t('abogados')}</HText>
+            </div>
+
+            {/* DESKTOP */}
+            <div className="md:block hidden w-full md:text-2xl text-lg tracking-wider bg-molse-primary/50">
+              <div className="flex justify-center items-center">
+                <div className="text-start [word-spacing:3px]">
+                  <p>{t('toAllOurClientsMD')}</p>
+                  <p>{t('toAllOurClientsMD2')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* MOBILE */}
+            <div className="md:hidden">
+              <div className="w-full text-center md:text-2xl text-lg tracking-wider bg-molse-primary/50">
+                <p className="">{t('toAllOurClients')}</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center space-x-4 pt-20">
               <ActionButton setSelectedPage={setSelectedPage}>{t('ourServicesButton')}</ActionButton>                                     
             </div>
           </div>

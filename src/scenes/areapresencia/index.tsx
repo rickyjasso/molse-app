@@ -19,18 +19,18 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
     const listStyles = `flex ${isAboveMediumSize ? `justify-center w-full` : `justify-center w-1/3` } ${isAboveSmSize ? ``:`justify-start w-full`} text-xl text-bold my-5 align-middle`
     const ciudadesPresencia = [
     'Monterrey',
-    'Ciudad de México',
-    'Guadalajara',
-    'Queretaro',
-    'Saltillo',
-    'Hermosillo',
     'Tijuana',
-    'Aguascalientes',
     'Acapulco',
+    'Aguascalientes',
+    'Saltillo',
+    'Queretaro',
+    'Hermosillo',
+    'Cd de México',
+    'Guadalajara',
     ]
 
   return (
-<div id="presencia" className="bg-molse-white pt-12 pb-16">
+<div id="presencia" className="bg-white pt-12 pb-16">
     <section id="presence" className="w-5/6 mx-auto">
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contacto)}
         initial="hidden"
@@ -42,22 +42,47 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
             visible: { opacity: 1, x: 0 },
         }}
     >
-        <h1 className="text-5xl font-bold text-center text-molse-primary">{t('presenceArea')}</h1>
-        <p className="mt-3 text-lg text-center text-molse-primary">{t('presenceAreaText')}</p>
-        <div className="mt-10 flex flex-col items-center">
-            <div className="flex-shrink-0 w-full max-w-2xl md:block hidden">
+        <h1 className="text-3xl mb-8 font-bold md:text-start text-center text-molse-primary">{t('presenceArea')}</h1>
+        <p className="mt-3 md:text-2xl text-lg md:text-start text-center text-molse-secondary">{t('presenceAreaText')}</p>
+        <div className="mt-10 flex items-center">
+            <div>
+            <div className="bg-molse-primary w-full md:w-4/5 lg:w-3/4 xl:w-2/3 -mx-3 p-5 hidden md:block">
+                <div className="mx-5 my-5">
+                    <h2 className="underline py-5 text-xl">{t('oficinasSede')}:</h2>
+                    <div className="text-white mb-8 text-xl">
+                        <span className="mr-2 mt-1">
+                        <FontAwesomeIcon icon={faLocationDot} />
+                        </span>
+                        {ciudadesPresencia[0]}
+                    </div>
+                    <h2 className="underline mt-3 mb-3 text-xl">{t('corresponsalias')}:</h2>
+                    <ul className="text-white flex flex-wrap-reverse justify-center items-center text-xl align-middle pb-10">
+                        {ciudadesPresencia.slice(1).map((city, index) => (
+                        <li className={`w-1/3 my-6 text-center`} key={index}>
+                            <span className="mr-2 mt-1">
+                            <FontAwesomeIcon icon={faLocationDot} />
+                            </span>
+                            {city}
+                        </li>
+                        ))}
+                    </ul>
+                    </div>
+                </div>
+
+                <ul className="text-black md:gap-4 md:text-center flex flex-wrap md:flex-col md:hidden">
+                    {ciudadesPresencia.map((city, index) => (
+                        <li className={`mb-2 ${listStyles}`} key={index}>
+                            <span className="text-molse-primary mr-2 mt-1">
+                                <FontAwesomeIcon icon={faLocationDot} />
+                            </span>
+                            {city}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="flex-shrink-0 w-full items-end md:w-[34rem] md:block hidden">
                 <Map />
             </div>
-            <ul className="text-black md:gap-4 md:text-center flex flex-wrap md:flex-nowrap">
-                {ciudadesPresencia.map((city, index) => (
-                    <li className={`mb-2 ${listStyles}`} key={index}>
-                        <span className="text-molse-primary mr-2 mt-1">
-                            <FontAwesomeIcon icon={faLocationDot} />
-                        </span>
-                        {city}
-                    </li>
-                ))}
-            </ul>
         </div>
     </motion.div>
     </section>
