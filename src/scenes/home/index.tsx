@@ -20,7 +20,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="w-full mx-auto text-center">
           <div className="text-white">
             <div className="mb-16 md:mt-20 text-center">
-              <HText textSize="md:text-9xl font-thin my-2 md:tracking-widest mb-4 text-8xl">{t('molse')}</HText>
+              <HText textSize="md:text-8xl font-thin my-2 md:tracking-widest mb-4 text-8xl">{t('molse')}</HText>
               <HText textSize="md:text-5xl font-thin my-2 tracking-molsewide md:tracking-abogadoswide text-4xl">{t('abogados')}</HText>
             </div>
 
