@@ -17,7 +17,8 @@ export default function MapChart() {
   //   { markerOffsetX: 0, markerOffset: 15, name: "TIJ", coordinates: [-116.2582799850419, 32.371051886516305] },
   //   { markerOffsetX: 0, markerOffset: 15, name: "HMO", coordinates: [-110.95654614321226, 29.07560503016933] },
   //   { markerOffsetX: 0, markerOffset: 15, name: "AGS", coordinates: [-102.21087277281784, 22.03049257146035] },
-  //   { markerOffsetX: 0, markerOffset: 15, name: "SAL", coordinates: [-100.97372316983859, 25.43821488280707 ] }
+  //   { markerOffsetX: 0, markerOffset: 15, name: "SAL", coordinates: [-100.97372316983859, 25.43821488280707] }
+  //   { markerOffsetX: 0, markerOffset: 15, name: "CHI", coordinates: [-106.0596986201024, 28.643207554650374] },
 
   // ];
   
