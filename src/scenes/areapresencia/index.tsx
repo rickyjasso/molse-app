@@ -25,8 +25,10 @@ const AreaPresencia = ({setSelectedPage}: Props) => {
     'Saltillo',
     'Queretaro',
     'Hermosillo',
-    'Cd de México',
     'Guadalajara',
+    'Chihuahua',
+    'Tamaulipas',
+    'Ciudad de México',
     ]
 
   return (
