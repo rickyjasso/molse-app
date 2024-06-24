@@ -65,7 +65,7 @@ const Contacto = ({setSelectedPage}: Props) => {
 
             <div className="md:flex md:w-full md:justify-between items-center">
               <div>
-                <form className="h-100" name="contact" onSubmit={onSubmit} method="POST" data-netlify="true">
+                <form className="h-100" name="contact" onSubmit={onSubmit} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                   <input type="hidden" name="form-name" value="contact" />
 
                   {/* Name and Company */}
@@ -160,7 +160,7 @@ const Contacto = ({setSelectedPage}: Props) => {
                       </p>
                     )}
                   </div>
-
+                  <div data-netlify-recaptcha="true"></div>
                   <button
                     type="submit"
                     className={`justify-center mt-5 rounded-xl text-xl bg-molse-secondary px-10 py-2 transition duration-500 hover:text-molse-primary hover:bg-molse-white text-white ${
